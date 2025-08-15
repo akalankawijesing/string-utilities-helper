@@ -1,0 +1,53 @@
+{
+  "name": "string-utilities-helper",
+  "version": "1.0.0",
+  "description": "A lightweight utility library for common string operations",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublishOnly": "npm run build && npm test",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "string",
+    "utilities",
+    "helper",
+    "text",
+    "manipulation"
+  ],
+  "author": "Akalanka N <akalankawijesingh@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akalankawijesing/string-utilities-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akalankawijesing/string-utilities-helper.git"
+  },
+  "homepage": "https://github.com/akalankawijesing/string-utilities-helper.git#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@typescript-eslint/eslint-plugin": "^6.7.0",
+    "@typescript-eslint/parser": "^6.7.0",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "rollup": "^3.29.4",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
